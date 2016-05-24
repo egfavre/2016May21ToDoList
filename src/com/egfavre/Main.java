@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-
     //make methods for refactoring
     public static void createItem(Scanner scanner, ArrayList<ToDoItem> items) {
         System.out.println("Enter your to do item:");
@@ -38,7 +37,8 @@ public class Main {
             }
             //simplest way:System.out.println(toDoItem.text);
             //but we want index
-            System.out.println(checkbox + " " + i + ". " + toDoItem.text);
+           // System.out.println(checkbox + " " + i + ". " + toDoItem.text);
+            System.out.printf("%s %s. %s\n", checkbox, i, toDoItem.text);
             i++;
         }
     }
